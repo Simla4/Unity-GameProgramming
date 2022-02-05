@@ -5,7 +5,7 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
     [SerializeField] private ObjectPooler objectPooler = null;
-    [SerializeField] private float spawnInterval = 10;
+    [SerializeField] private float spawnInterval = 1;
 
     private void Start()
     {
