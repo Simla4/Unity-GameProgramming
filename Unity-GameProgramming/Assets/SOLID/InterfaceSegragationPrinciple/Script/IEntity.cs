@@ -31,16 +31,12 @@ public interface IEntity
     
 }
 
-public class NPC : IAttack
-{
-}
-
 public class Door : IHealth
 {
-    
-    float Health { get; set; }
-    int MaxHealth { get; }
-    int ModifyHealth(int amount)
+
+    public float Health { get; set; } = 100;
+    public int MaxHealth { get; } = 250;
+    public int ModifyHealth(int amount)
     {
        return (int)(Health -= amount);
     }
@@ -49,9 +45,9 @@ public class Door : IHealth
 
 public interface IHealth
 {
-    float Health { get; set; }
-    int MaxHealth { get; }
-    int ModifyHealth(int amount);
+    public float Health { get; set; }
+    public int MaxHealth { get; }
+    public int ModifyHealth(int amount);
 }
 
 public interface IAttack
