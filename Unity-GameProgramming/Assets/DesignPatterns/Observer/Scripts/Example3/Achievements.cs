@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Achievement : MonoBehaviour
+public class Achievements : MonoBehaviour
 {
     public static Action AchivementsDetection;
 
